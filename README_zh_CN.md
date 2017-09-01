@@ -30,7 +30,7 @@ Google 有多个面向开发者网站，如 Android 开发者网站。这些网�
 其它时间扩展处于非激活状态、不消耗资源。可以从 Chrome 内置的任务管理器(Task Manager)中看到扩展是否处于激活状态。
 
 # 支持的开发者网站
-- Android 开发者：[developer.android.com](https://developer.android.com) , [developer.android.google.cn](https://developer.android.google.cn) 
+- Android 开发者：[developer.android.com](https://developer.android.com) , [developer.android.google.cn](https://developer.android.google.cn) , [source.android.com](https://source.android.com) , [source.android.google.cn](https://source.android.google.cn)
 - Google 开发者：[developers.google.com](https://developers.google.com)  , [developers.google.cn](https://developers.google.cn) 
 - Firebase 开发者：[firebase.google.com](https://firebase.google.com)  , [firebase.google.cn](https://firebase.google.cn) 
 - Google Cloud 开发者：[cloud.google.com](https://cloud.google.com) 
