@@ -21,7 +21,7 @@ After installing the extension from Chrome webstore, it will show different exte
 Note: This extension is implemented by [event pages](https://developer.chrome.com/extensions/event_pages) which are loaded only in a few seconds at the beginning of visiting the supported developer websites or clicking the extension icon. So it doesn't occupy your system resources.
 
 # Supported developer websites
-- Android Developers：[developer.android.com](https://developer.android.com) , [developer.android.google.cn](https://developer.android.google.cn) 
+- Android Developers：[developer.android.com](https://developer.android.com) , [developer.android.google.cn](https://developer.android.google.cn) , [source.android.com](https://source.android.com) , [source.android.google.cn](https://source.android.google.cn)
 - Google Developers：[developers.google.com](https://developers.google.com)  , [developers.google.cn](https://developers.google.cn) 
 - Firebase Developers：[firebase.google.com](https://firebase.google.com)  , [firebase.google.cn](https://firebase.google.cn) 
 - Google Cloud Developers：[cloud.google.com](https://cloud.google.com) 
