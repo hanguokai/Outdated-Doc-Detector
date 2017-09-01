@@ -3,7 +3,7 @@
 
 Chrome WebStore 安装地址
 
-[![Chrome WebStore 安装地址](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](http://example.net/)
+[![Chrome WebStore 安装地址](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png "Chrome WebStore 安装地址")](https://chrome.google.com/webstore/detail/outdated-doc-detector/enmpooegjbnbhifdpapjknlbjefnlnja)
 
 Google 有多个面向开发者网站，如 Android 开发者网站。这些网站提供了开发者经常需要查阅的关键文档，非常重要。
 通过网站的左下角(或右下角)可以选择网站支持的一种语言作为默认显示的语言。
