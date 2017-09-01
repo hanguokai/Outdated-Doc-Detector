@@ -1,0 +1,24 @@
+{
+  "extName": {
+    "message": "Outdated Doc Detector",
+    "description": "This extension's name"
+  },
+  "extDescription": {
+    "message": "Help non-English developers to check whether the translation of the current page is behind the corresponding English version."
+  },
+  "behindDays": {
+    "message": "This page is $1 days behind the <a href='$2' target='_blank'>latest</a> version."
+  },
+  "isUpToDate": {
+    "message": "This page is the latest version."
+  },
+  "behindLessThanOneDay": {
+    "message": "This page is a little behind the <a href='$1' target='_blank'>latest</a> version."
+  },
+  "curPageUpdatedTime": {
+    "message": "Last updated time of this page:<br/>$1"
+  },
+  "enPageUpdatedTime": {
+    "message": "Last updated time of the English version:<br/>$1"
+  }
+}

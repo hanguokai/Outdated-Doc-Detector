@@ -1,0 +1,24 @@
+{
+  "extName": {
+    "message": "过时文档检测器",
+    "description": "扩展名"
+  },
+  "extDescription": {
+    "message": "帮助使用非英语的开发者检查当前页面的翻译内容是否落后于对应的英语版本。"
+  },
+  "behindDays": {
+    "message": "当前页面落后<a href='$2' target='_blank'>最新版本</a> $1 天。"
+  },
+  "isUpToDate": {
+    "message": "当前页面已是最新版本。"
+  },
+  "behindLessThanOneDay": {
+    "message": "当前页面稍微落后<a href='$1' target='_blank'>最新版本</a>。"
+  },
+  "curPageUpdatedTime": {
+    "message": "当前页面的最后更新时间:<br/>$1"
+  },
+  "enPageUpdatedTime": {
+    "message": "英语版本的最后更新时间:<br/>$1"
+  }
+}
