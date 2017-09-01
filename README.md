@@ -5,7 +5,7 @@ Outdated-Doc-Detector is a Chrome extension to help non-English developers to ch
 
 Chrome WebStore install link
 
-[![Chrome WebStore install link](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](http://example.net/)
+[![Chrome WebStore install link](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png "Chrome WebStore install link")](https://chrome.google.com/webstore/detail/outdated-doc-detector/enmpooegjbnbhifdpapjknlbjefnlnja)
 
 Google has some developer websites that support multiple languages. You can select one of these at the lower left/right corner of the page as your default display language. Many non-English developers prefer to use their language as the default display language. But these non-English documents are often behind it's corresponding English versions. 
 
