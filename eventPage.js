@@ -10,13 +10,11 @@ function show(request, sender, sendResponse) {
   const diff = request.oriUpdateTime - request.curUpdateTime;
   if(diff <= 0) { // up to date
     chrome.pageAction.setIcon({tabId: tabId, path: 'icons/emoji_u1f600.png'});
-  } else if(diff < oneDay*45) { // warming
+  } else if(diff < oneDay*45) { // warning
     chrome.pageAction.setIcon({tabId: tabId, path: 'icons/emoji_u26a0.png'});
   } else { // dangerous
     chrome.pageAction.setIcon({tabId: tabId, path: 'icons/emoji_u2620.png'});
   }
-
-  console.log(chrome.pageAction.getPopup({tabId: tabId}));
 }
 
 chrome.runtime.onMessage.addListener(show);
