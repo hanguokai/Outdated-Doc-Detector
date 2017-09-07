@@ -20,5 +20,8 @@
   },
   "enPageUpdatedTime": {
     "message": "英语版本的最后更新时间:<br/>$1"
+  },
+  "note": {
+    "message": "注意："
   }
 }

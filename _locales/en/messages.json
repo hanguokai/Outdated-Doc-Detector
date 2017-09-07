@@ -20,5 +20,8 @@
   },
   "enPageUpdatedTime": {
     "message": "Last updated time of the English version:<br/>$1"
+  },
+  "note": {
+    "message": "Note: "
   }
 }
