@@ -23,5 +23,8 @@
   },
   "note": {
     "message": "注意："
+  },
+  "optionShowBannerLabel": {
+    "message": " 显示警告"
   }
 }

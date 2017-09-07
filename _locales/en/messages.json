@@ -23,5 +23,8 @@
   },
   "note": {
     "message": "Note: "
+  },
+  "optionShowBannerLabel": {
+    "message": " Show warning banner"
   }
 }

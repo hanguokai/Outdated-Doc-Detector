@@ -21,6 +21,9 @@ function restore_options() {
   }, function(items) {
     document.getElementById('showBanner').checked = items.showBanner;
   });
+
+  document.getElementById('showBannerLabel').innerText = 
+    chrome.i18n.getMessage("optionShowBannerLabel");
 }
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click',
