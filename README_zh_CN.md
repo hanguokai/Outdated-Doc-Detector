@@ -35,3 +35,10 @@ Google 有多个面向开发者网站，如 Android 开发者网站。这些网�
 - Firebase 开发者：[firebase.google.com](https://firebase.google.com)  , [firebase.google.cn](https://firebase.google.cn) 
 - Google Cloud 开发者：[cloud.google.com](https://cloud.google.com) 
 - TensorFlow 开发者：[www.tensorflow.org](https://www.tensorflow.org)  , [tensorflow.google.cn](https://tensorflow.google.cn) 
+
+# 版本说明
+### [1.1.0] - 2017-09-08
+- 添加页面内警告提示，可通过选项设置是否显示。
+
+### [1.0.2] - 2017-09-02
+- 添加点击扩展的快捷键，默认是 "Alt+Shift+E"。

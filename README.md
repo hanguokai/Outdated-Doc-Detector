@@ -26,3 +26,10 @@ Note: This extension is implemented by [event pages](https://developer.chrome.co
 - Firebase Developers：[firebase.google.com](https://firebase.google.com)  , [firebase.google.cn](https://firebase.google.cn) 
 - Google Cloud Developers：[cloud.google.com](https://cloud.google.com) 
 - TensorFlow Developers：[www.tensorflow.org](https://www.tensorflow.org)  , [tensorflow.google.cn](https://tensorflow.google.cn) 
+
+# Release Notes
+### [1.1.0] - 2017-09-08
+- New feature: Add warning banner in web pages and it's setting in the extension options page.
+
+### [1.0.2] - 2017-09-02
+- New feature: Add keyboard shortcut for popup page, default is "Alt+Shift+E".
