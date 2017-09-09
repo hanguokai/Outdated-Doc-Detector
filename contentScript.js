@@ -108,7 +108,7 @@ async function init() {
  */
 function showBanner() {
   const diff = pageData.oriUpdateTime - pageData.curUpdateTime;
-  if(diff <= 0) { // up to date
+  if(diff <= 60*30*1000) { // up to date or less than 30min
     return;
   }
 

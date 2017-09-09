@@ -20,7 +20,7 @@ function updateTitle(pageData) {
   if(diff >= oneDay) { // behind more than 1 days
     const days = Math.trunc(diff/oneDay);
     h2.innerHTML = chrome.i18n.getMessage("behindDays", [days, pageData.enURL]);
-  } else if(diff <= 0) { // up to date
+  } else if(diff <= 60*30*1000) { // up to date or less than 30min
     h2.innerText = chrome.i18n.getMessage("isUpToDate");
   } else { // behind less than 1 day
     h2.innerHTML = chrome.i18n.getMessage("behindLessThanOneDay", [pageData.enURL]);
