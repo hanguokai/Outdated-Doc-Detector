@@ -1,9 +1,14 @@
 function getLang() {
   return document.documentElement.lang;
-} 
+}
 
 async function findCurrentPageLastModified() {
-  // for android dev site 
+  // for MDN
+  if(location.hostname === "developer.mozilla.org") {
+    return findMDNPageLastModified(document);
+  }
+
+  // for android dev site
   // <meta itemprop="dateModified" content="2017-07-27T14:36:46.324130">
   const meta = document.head.querySelector("meta[itemprop='dateModified'");
   if(meta) {
@@ -26,13 +31,18 @@ function getDateAsUTC(datestr) {
 }
 
 async function findEnPageLastModified() {
+  // for MDN
+  if(location.hostname === "developer.mozilla.org") {
+    return findMDNEnPageLastModified();
+  }
+  // other google devsites
   return await getHTTPLastModified(getEnPageUrl());
-} 
+}
 
 async function getHTTPLastModified(url) {
   try {
     const option = {
-      method: 'HEAD', 
+      method: 'HEAD',
       credentials: 'same-origin'
     }
     const response = await fetch(url, option);
@@ -54,11 +64,37 @@ function getEnPageUrl() {
   return `${location.pathname}?${params}`;
 }
 
+function getMDNEnPageUrl() {
+  // replace developer.mozilla.org/zh-CN/ to /en-US/
+  const enAlternate = document.head.querySelector("link[rel=alternate][hreflang=en-US]");
+  return enAlternate ? enAlternate.href : null;
+}
+
+async function findMDNEnPageLastModified() {
+  const enURL = getMDNEnPageUrl();
+  if(enURL) {
+    const response = await fetch(enURL);
+    const html = await response.text();
+    const enHTML = new DOMParser().parseFromString(html, 'text/html');
+    return findMDNPageLastModified(enHTML);
+  }
+  return null;
+}
+
+function findMDNPageLastModified(dom) {
+  // a time element
+  const lastUpdateTime = dom.querySelector(".contributors-sub time");
+  if(lastUpdateTime) {
+    return new Date(lastUpdateTime.dateTime);
+  }
+  return null;
+}
+
 var pageData = null;
 
 async function init() {
   const lang = getLang();
-  if(!lang || lang === "en") {
+  if(!lang || lang === "en" || lang === "en-US") {
     return
   }
 
@@ -71,17 +107,24 @@ async function init() {
   if(!oriUpdateTime) {
     return
   }
-  
+
   // console.log("curUpdateTime: " + curUpdateTime);
   // console.log("oriUpdateTime: " + oriUpdateTime);
+
+  let enURL;
+  if(location.hostname === "developer.mozilla.org") {
+    enURL = getMDNEnPageUrl();
+  } else {
+    enURL = location.protocol
+          + "//"
+          + location.hostname
+          + getEnPageUrl();
+  }
 
   pageData = {
     oriUpdateTime: oriUpdateTime.getTime(),
     curUpdateTime: curUpdateTime.getTime(),
-    enURL: location.protocol 
-          + "//" 
-          + location.hostname
-          + getEnPageUrl(),
+    enURL: enURL,
     curURL: document.location.href
   }
 
@@ -122,7 +165,7 @@ function showBanner() {
   } else if(diff > 0) { // behind less than 1 day
     container.innerHTML = noteString + chrome.i18n.getMessage("behindLessThanOneDay", [pageData.enURL]);
   }
-  container.style.cssText = "position:fixed; width: 314px; margin-left: -157px; top: 12%; left: 50%; color: blue; border: 2px solid red; background-color: yellow; z-index: 1000000; font-size: 12px; padding: 3px;"; 
+  container.style.cssText = "position:fixed; width: 314px; margin-left: -157px; top: 12%; left: 50%; color: blue; border: 2px solid red; background-color: yellow; z-index: 1000000; font-size: 12px; padding: 3px;";
   // close element
   const close = document.createElement('span');
   close.innerText = "[X]";
