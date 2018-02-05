@@ -24,6 +24,7 @@
   "content_scripts": [
     {
       "matches": [
+        "*://developer.mozilla.org/*",
         "*://developer.android.com/*",
         "*://developer.android.google.cn/*",
         "*://firebase.google.com/*",
