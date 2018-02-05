@@ -38,6 +38,9 @@ Chrome WebStore 安装地址
 - TensorFlow 开发者：[www.tensorflow.org](https://www.tensorflow.org)  , [tensorflow.google.cn](https://tensorflow.google.cn)
 
 # 版本说明
+### [1.2.0] - 2018-02-05
+- 支持 MDN Web 文档.
+
 ### [1.1.0] - 2017-09-08
 - 添加页面内警告提示，可通过选项设置是否显示。
 
