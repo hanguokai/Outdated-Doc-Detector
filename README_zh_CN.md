@@ -5,8 +5,8 @@ Chrome WebStore 安装地址
 
 [![Chrome WebStore 安装地址](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png "Chrome WebStore 安装地址")](https://chrome.google.com/webstore/detail/outdated-doc-detector/enmpooegjbnbhifdpapjknlbjefnlnja)
 
-Google 有多个面向开发者网站，如 Android 开发者网站。这些网站提供了开发者经常需要查阅的关键文档，非常重要。
-通过网站的左下角(或右下角)可以选择网站支持的一种语言作为默认显示的语言。
+开发者网站提供了开发者经常需要查阅的关键文档，非常重要。
+其中很多支持多语言版本，通过网站的左下角(或右下角)可以选择网站支持的一种语言作为默认显示的语言。
 
 一般而言，这些网站的内容首先使用英语来撰写新内容或更新现有内容，然后发布。而其它语言的版本则由英语版内容翻译而来。
 因此非英语版内容的更新时间一般要落后最新英语版内容一段时间，落后时间可能很短也可能长。
@@ -30,11 +30,12 @@ Google 有多个面向开发者网站，如 Android 开发者网站。这些网�
 其它时间扩展处于非激活状态、不消耗资源。可以从 Chrome 内置的任务管理器(Task Manager)中看到扩展是否处于激活状态。
 
 # 支持的开发者网站
+- MDN Web 文档: [developer.mozilla.org](https://developer.mozilla.org/)
 - Android 开发者：[developer.android.com](https://developer.android.com) , [developer.android.google.cn](https://developer.android.google.cn) , [source.android.com](https://source.android.com) , [source.android.google.cn](https://source.android.google.cn)
-- Google 开发者：[developers.google.com](https://developers.google.com)  , [developers.google.cn](https://developers.google.cn) 
-- Firebase 开发者：[firebase.google.com](https://firebase.google.com)  , [firebase.google.cn](https://firebase.google.cn) 
-- Google Cloud 开发者：[cloud.google.com](https://cloud.google.com) 
-- TensorFlow 开发者：[www.tensorflow.org](https://www.tensorflow.org)  , [tensorflow.google.cn](https://tensorflow.google.cn) 
+- Google 开发者：[developers.google.com](https://developers.google.com)  , [developers.google.cn](https://developers.google.cn)
+- Firebase 开发者：[firebase.google.com](https://firebase.google.com)  , [firebase.google.cn](https://firebase.google.cn)
+- Google Cloud 开发者：[cloud.google.com](https://cloud.google.com)
+- TensorFlow 开发者：[www.tensorflow.org](https://www.tensorflow.org)  , [tensorflow.google.cn](https://tensorflow.google.cn)
 
 # 版本说明
 ### [1.1.0] - 2017-09-08

@@ -7,7 +7,7 @@ Chrome WebStore install link
 
 [![Chrome WebStore install link](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png "Chrome WebStore install link")](https://chrome.google.com/webstore/detail/outdated-doc-detector/enmpooegjbnbhifdpapjknlbjefnlnja)
 
-Google has some developer websites that support multiple languages. You can select one of these at the lower left/right corner of the page as your default display language. Many non-English developers prefer to use their language as the default display language. But these non-English documents are often behind it's corresponding English versions. 
+Google has some developer websites that support multiple languages. You can select one of these at the lower left/right corner of the page as your default display language. Many non-English developers prefer to use their language as the default display language. But these non-English documents are often behind it's corresponding English versions.
 
 **Outdated documents often lead to potential problems and are inconspicuous for developers.** This extension is used to indicate whether the ducument is out of date by comparing the updated time between non-English version and English version of the same page.
 
@@ -21,13 +21,17 @@ After installing the extension from Chrome webstore, it will show different exte
 Note: This extension is implemented by [event pages](https://developer.chrome.com/extensions/event_pages) which are loaded only in a few seconds at the beginning of visiting the supported developer websites or clicking the extension icon. So it doesn't occupy your system resources.
 
 # Supported developer websites
+- MDN Web Docs: [developer.mozilla.org](https://developer.mozilla.org/)
 - Android Developers：[developer.android.com](https://developer.android.com) , [developer.android.google.cn](https://developer.android.google.cn) , [source.android.com](https://source.android.com) , [source.android.google.cn](https://source.android.google.cn)
-- Google Developers：[developers.google.com](https://developers.google.com)  , [developers.google.cn](https://developers.google.cn) 
-- Firebase Developers：[firebase.google.com](https://firebase.google.com)  , [firebase.google.cn](https://firebase.google.cn) 
-- Google Cloud Developers：[cloud.google.com](https://cloud.google.com) 
-- TensorFlow Developers：[www.tensorflow.org](https://www.tensorflow.org)  , [tensorflow.google.cn](https://tensorflow.google.cn) 
+- Google Developers：[developers.google.com](https://developers.google.com)  , [developers.google.cn](https://developers.google.cn)
+- Firebase Developers：[firebase.google.com](https://firebase.google.com)  , [firebase.google.cn](https://firebase.google.cn)
+- Google Cloud Developers：[cloud.google.com](https://cloud.google.com)
+- TensorFlow Developers：[www.tensorflow.org](https://www.tensorflow.org)  , [tensorflow.google.cn](https://tensorflow.google.cn)
 
 # Release Notes
+### [1.2.0] - 2018-02-05
+- New feature: Support MDN Web Docs for web developers.
+
 ### [1.1.0] - 2017-09-08
 - New feature: Add warning banner in web pages and it's setting in the extension options page.
 
