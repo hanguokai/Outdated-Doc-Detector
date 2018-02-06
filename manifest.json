@@ -1,6 +1,6 @@
 {
   "name": "__MSG_extName__",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "manifest_version": 2,
   "description": "__MSG_extDescription__",
   "default_locale": "en",
@@ -38,6 +38,7 @@
         "*://cloud.google.com/*"
       ],
       "js": [
+        "analyzer.js",
         "contentScript.js"
       ]
     }
