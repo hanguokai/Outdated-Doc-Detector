@@ -71,14 +71,15 @@ class MDN extends Analyzer {
 
   getEnPageUrl() {
     // replace developer.mozilla.org/zh-CN/ to /en-US/
-    const enAlternate = document.head.querySelector("link[rel=alternate][hreflang=en-US]");
+    const enAlternate = document.head.querySelector("link[rel=alternate][hreflang=en-US]")
+                    || document.head.querySelector("link[rel=alternate][hreflang=en]");
     return enAlternate ? enAlternate.href : null;
   }
 
   // curent page and english page are the same method
   findMDNPageLastModified(dom) {
     // a time element
-    const lastUpdateTime = dom.querySelector(".contributors-sub time");
+    const lastUpdateTime = dom.querySelector(".last-modified time");
     if(lastUpdateTime) {
       return new Date(lastUpdateTime.dateTime);
     }
