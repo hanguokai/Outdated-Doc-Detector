@@ -4,7 +4,7 @@ function show(request, sender, sendResponse) {
   }
 
   const tabId = sender.tab.id;
-  chrome.action.show(tabId);
+  chrome.action.enable(tabId);
 
   if(request.reset) {
     chrome.action.setIcon({tabId: tabId, path: 'oudated-128.png'});
@@ -22,4 +22,10 @@ function show(request, sender, sendResponse) {
   }
 }
 
+function onStartup() {
+  chrome.action.disable();
+}
+
+chrome.runtime.onInstalled.addListener(onStartup);
+chrome.runtime.onStartup.addListener(onStartup);
 chrome.runtime.onMessage.addListener(show);
