@@ -79,7 +79,7 @@ class MDN extends Analyzer {
   // curent page and english page are the same method
   findMDNPageLastModified(dom) {
     // a time element
-    const lastUpdateTime = dom.querySelector(".last-modified time");
+    const lastUpdateTime = dom.querySelector(".last-modified-date time");
     if(lastUpdateTime) {
       return new Date(lastUpdateTime.dateTime);
     }
@@ -97,14 +97,6 @@ class GoogleSites extends Analyzer {
     const meta = document.head.querySelector("meta[itemprop='dateModified'");
     if(meta) {
       return this.getDateAsUTC(meta.content);
-    }
-
-    // for firebase, google-dev, cloud, tensorflow
-    // <p itemprop="datePublished" content="2017-08-07T20:49:39.902150">
-    // This info maybe not in some pages.
-    const p = document.querySelector("p[itemprop='datePublished'");
-    if(p) {
-      return this.getDateAsUTC(p.getAttribute("content"));
     }
 
     // default use http header
